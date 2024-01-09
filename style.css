@@ -24,8 +24,10 @@
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
+    margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 #navbar_logo {
@@ -101,7 +103,7 @@
     transition: all 0.3 ease;
 }
 
-@media screen and (max-widht: 960px) {
+@media screen and (max-width: 960px) {
     .navbar_container {
         display: flex;
         justify-content: space-between;
@@ -118,8 +120,8 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        /*top: -1000px;
-        opacity: 0;*/
+        top: -1000px;
+        opacity: 1;
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
@@ -181,5 +183,17 @@
     .navbar_toggle .bar {
         display: block;
         cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translate(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translate(-8px) rotate(-45deg);
     }
 }
