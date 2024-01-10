@@ -1,2 +1,2 @@
 # tech-site
-Making a website with help from tutorials
+Making a website front page with help from tutorials
